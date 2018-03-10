@@ -28,4 +28,10 @@ pipelines:
                    arguments:
                     - "-c"
                     - "./mvnw clean install -DskipTests"
-                   
+            archive: # name of the job
+              tasks:
+                - exec: # indicates type of task
+                   command: /bin/sh
+                   arguments:
+                    - "-c"
+                    - "./mvnw deploy"
