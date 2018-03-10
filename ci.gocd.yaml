@@ -16,13 +16,8 @@ pipelines:
           jobs:
             chmod: # name of the job
               tasks:
+                - script: chmod +x mvnw
                 - exec: # indicates type of task
-                   command: exec
+                   command: /bin/sh
                    arguments:
-                    - "/bin/sh chmod +x mvnw"
-            install: # name of the job
-              tasks:
-                - exec: # indicates type of task
-                   command: exec
-                   arguments:
-                    - "/bin/sh ./mvnw clean install"
+                    - "chmod +x mvnw"
