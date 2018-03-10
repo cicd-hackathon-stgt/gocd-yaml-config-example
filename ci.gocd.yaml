@@ -16,7 +16,6 @@ pipelines:
           jobs:
             chmod: # name of the job
               tasks:
-                - script: chmod +x mvnw
                 - exec: # indicates type of task
                    command: /bin/sh
                    arguments:
