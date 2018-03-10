@@ -34,4 +34,4 @@ pipelines:
                    command: /bin/sh
                    arguments:
                     - "-c"
-                    - "./mvnw deploy -DskipTests"
+                    - "./mvnw -s settings.xml deploy -DskipTests"
