@@ -17,8 +17,8 @@ pipelines:
             install: # name of the job
               tasks:
                 - exec: # indicates type of task
-                  command: /bin/sh
-                  arguments:
+                   command: /bin/sh
+                   arguments:
                     - "-c"
                     - "chmod +x mvnw"
                     - "./mvnw clean install"
