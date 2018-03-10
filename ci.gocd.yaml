@@ -27,5 +27,5 @@ pipelines:
                    command: /bin/sh
                    arguments:
                     - "-c"
-                    - "./mvnw clean install"
+                    - "./mvnw clean install -DskipTests"
                    
