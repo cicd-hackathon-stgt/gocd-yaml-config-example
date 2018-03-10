@@ -14,11 +14,15 @@ pipelines:
     stages:
       - build: # name of stage
           jobs:
+            chmod: # name of the job
+              tasks:
+                - exec: # indicates type of task
+                   command: /bin/sh
+                   arguments:
+                    - "-c chmod +x mvnw"
             install: # name of the job
               tasks:
                 - exec: # indicates type of task
                    command: /bin/sh
                    arguments:
-                    - "-c"
-                    - "chmod +x mvnw"
-                    - "./mvnw clean install"
+                    - "-c ./mvnw clean install"
