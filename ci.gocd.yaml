@@ -2,8 +2,6 @@ environments:
   example:
     environment_variables:
       EXAMPLE_DEPLOYMENT: testing
-    agents:
-      - "3cdd7cd70fd6"
     pipelines:
       - silberfishle
 pipelines:
